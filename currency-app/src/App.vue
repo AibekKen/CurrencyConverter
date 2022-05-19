@@ -18,14 +18,15 @@ export default {
 @import "@/assets/styles/nullstyle.scss";
 
 #app {
-  max-width: 1100px;
+  max-width: 360px;
   padding: 15px;
   margin: 0 auto;
 }
 .container {
   display: flex;
-  max-width: 350px;
+  max-width: 400px;
   justify-content: space-between;
   margin: 0 auto;
 }
+
 </style>

@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     async getCurrency() {
-      let myHeaders = new Headers();
+        let myHeaders = new Headers();
       myHeaders.append("apikey", "9kiDDpaHeRdJTdiQYPNSYn9ukqDhcpMu");
       var requestOptions = {
         method: "GET",
@@ -54,15 +54,15 @@ export default {
     },
   },
   async mounted() {
-    let myHeaders = new Headers();
+      let myHeaders = new Headers();
     myHeaders.append("apikey", "9kiDDpaHeRdJTdiQYPNSYn9ukqDhcpMu");
 
-    var requestOptions = {
+   var requestOptions = {
       method: "GET",
       redirect: "follow",
       headers: myHeaders,
     };
-    fetch(
+     fetch(
       `https://api.apilayer.com/exchangerates_data/latest?symbols=EUR%2CUSD%2CGBP&base=${this.base}`,
       requestOptions
     )
@@ -84,6 +84,7 @@ export default {
   max-width: 140px;
   background: rgba(10, 144, 227, 0.374);
   box-shadow: 0 0 2px #000;
+  margin: 0 0 0 10px;
   &__head {
     margin: 0 0 11px 0;
     max-width: 125px;
